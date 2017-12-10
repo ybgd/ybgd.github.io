@@ -45,7 +45,7 @@ body {
 
 /* .s1*/
 
-.s1 {
+.s1,.s2{
     background: url("../img/bj.png");
     height: 100%;
 }
@@ -132,4 +132,78 @@ body {
 }
 .s1 .footer img:nth-of-type(2){
     left:-40px;
+}
+
+
+.s2 {
+    color:#0dd0b4;
+}
+.s2 h2{
+    padding-top: 50px;
+}
+.s2 h2::before {
+    background: url(../img/14.png);
+    background-size: cover;
+    left: 7%;
+    top: 9%;
+}
+.s2 h2::before, .s2 h2::after {
+    content: "";
+    width: 83px;
+    height: 20px;
+    display: inline-block;
+    position: absolute;
+}
+.s2 h2::after {
+    background: url(../img/13.png);
+    background-size: cover;
+    right: 7%;
+    top: 9%;
+}
+.s2 h2::before, .s2 h2::after {
+    content: "";
+    width: 83px;
+    height: 20px;
+    display: inline-block;
+    position: absolute;
+}
+.s2 small{
+    display: block;
+    font-size: 15px;
+    padding-top:5px;
+}
+.s2 img {
+    width: 80%;
+}
+.s2 .text {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 113px;
+    width: 80%;
+    margin: auto;
+    text-align: left;
+    padding: 5%;
+    font-size: 15px;}
+
+.s2 .text p{
+    margin-bottom:8px;
+}
+.s2 span {
+    position: absolute;
+    bottom: -66px;
+    left: 50%;
+    width: 120px;
+    height: 30px;
+    margin-left: -60px;
+    background: -moz-linear-gradient(left, #00e7f7, #00fc9f);
+    background: -webkit-gradient(linear, 0 50%, 100% 50%, from(#00e7f7), to(#00fc9f));
+    background: -webkit-linear-gradient(left, #00e7f7, #00fc9f);
+    background: -o-linear-gradient(left, #00e7f7, #00fc9f);
+    color: #000;
+    font-size: 16px;
+    line-height: 30px;
+    border-radius: 20px;
+    font-weight: bold;
+    text-align: center;
 }
