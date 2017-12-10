@@ -171,6 +171,7 @@ body {
     display: block;
     font-size: 15px;
     padding-top:5px;
+    padding-bottom:10px;
 }
 .s2 img {
     width: 80%;
@@ -179,7 +180,7 @@ body {
     position: absolute;
     left: 0;
     right: 0;
-    top: 113px;
+    top: 127px;
     width: 80%;
     margin: auto;
     text-align: left;
