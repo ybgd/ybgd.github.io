@@ -40,7 +40,22 @@ body {
     right: auto;
     margin-left: -13.5px;
     transform: rotateZ(-90deg);
+    width: 17px;
+    height: 34px;
+    background-size: 17px 34px;
+    animation: footbutton 2s infinite;
 }
+@keyframes footbutton{
+    0%{
+        botton:2%;
+        opacity:1;
+    }
+    100%{
+         botton:6%;
+        opacity:0;
+    }
+}
+
 /*音乐按钮*/
 #mp3btn {
     position: absolute;
@@ -167,6 +182,31 @@ body {
     position: absolute;
     left:0;
 }
+//
+.s1 .footer img:nth-of-type(1) {
+    left: 0;
+    animation: footerimg1 1.5s alternate infinite;
+}
+.s1 .footer img:nth-of-type(2) {
+    left: 0;
+    animation: footerimg2 1.5s alternate infinite;
+}
+@keyframes footerimg1{
+    0%{
+        left:70px;
+    }
+    100%{
+        left:30px;
+    }
+}
+@keyframes footerimg2{
+    0%{
+        left:-90px;
+    }
+    100%{
+        left:0px;
+    }
+}
 .s1 .footer img:nth-of-type(2){
     left:-40px;
 }
@@ -239,6 +279,38 @@ body {
     font-weight: bold;
     text-align: center;
 }
+//
+.s2 .footer img{
+    height:70px;
+    position: absolute;
+    left:0;
+    top:596px;
+}
+.s2 .footer img:nth-of-type(1) {
+    left: 0;
+    animation: footerimg1 1.5s alternate infinite;
+}
+.s2 .footer img:nth-of-type(2) {
+    left: 0;
+    animation: footerimg2 1.5s alternate infinite;
+}
+@keyframes footerimg1{
+    0%{
+        left:120px;
+    }
+    100%{
+        left:0px;
+    }
+}
+@keyframes footerimg2{
+    0%{
+        left:-90px;
+    }
+
+    100%{
+        left:0px;
+    }
+}
 
 
 /*s3页面*/
@@ -248,11 +320,11 @@ body {
 .s3 h2{
     padding-top: 50px;
 }
-.s3 small{
-    display: block;
-    font-size: 15px;
-    padding-top:5px;
-    padding-bottom:10px;
+.s3 h2::before {
+    background: url(../img/14.png);
+    background-size: cover;
+    left: 7%;
+    top: 49%;
 }
 .s3 h2::before, .s3 h2::after {
     content: "";
@@ -265,11 +337,372 @@ body {
     background: url(../img/13.png);
     background-size: cover;
     right: 7%;
-    top: 9%;
+    top: 49%;
 }
-.s3 h2::before {
-    background: url(../img/14.png);
+
+.s3 small{
+    display: block;
+    font-size: 15px;
+    padding-top:5px;
+    padding-bottom:10px;
+}
+.s3font{
+    width:80px;
+    height: 100px;
+    color: #26faae;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    margin-left: -40px;
+    margin-top: -65px;
+}
+.s3font div:nth-of-type(1) span:nth-of-type(1){
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: url("../img/s3.png");
     background-size: cover;
-    left: 7%;
-    top: 9%;
+    left: -90%;
+    top: -50%;
+    line-height: 60px;
 }
+.s3font div:nth-of-type(1) span:nth-of-type(2){
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: url("../img/s3.png");
+    background-size: cover;
+    left: 106%;
+    top: -50%;
+    line-height: 60px;
+}
+.s3font div:nth-of-type(2) span:nth-of-type(1) {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: url(../img/s3.png);
+    background-size: cover;
+    left: -138%;
+    top: 35%;
+    line-height: 60px;
+}
+.s3font div:nth-of-type(2) span:nth-of-type(2) {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: url(../img/s3.png);
+    background-size: cover;
+    left: 157%;
+    top: 35%;
+    line-height: 60px;
+}
+.s3font div:nth-of-type(3) span:nth-of-type(1) {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: url(../img/s3.png);
+    background-size: cover;
+    left: -90%;
+    top: 146%;
+    line-height: 60px;
+}
+.s3font div:nth-of-type(3) span:nth-of-type(2) {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: url(../img/s3.png);
+    background-size: cover;
+    left: 107%;
+    top: 147%;
+    line-height: 60px;
+}
+.s3font div:nth-of-type(4) span {
+    position: absolute;
+    width: 134px;
+    height: 134px;
+    background: url(../img/s3bg.png);
+    background-size: cover;
+    left: -38%;
+    top: 9%;
+    line-height:134px;
+}
+
+.s3 .s3text{
+    color:#26faae;
+    font-size:13px;
+    text-align: left;
+    position: absolute;
+    top: 80%;
+    left: 15%;
+    width: 80%;
+    border-left:2px solid #26faae;
+    line-height: 20px;
+    padding-left: 10px;
+}
+@media screen and (max-width: 414px) {
+    .s3dashed{
+        position: absolute;
+        top: 28%;
+        left: 16%;
+
+    }
+    .s3dashed div:nth-of-type(1){
+        width:280px;
+        height: 280px;
+        border-radius: 50%;
+        border:  dashed 1px #00fbc3;
+        animation: dashedshun 8s infinite linear;
+    }
+    .s3dashed div:nth-of-type(2){
+        width:330px;
+        height: 330px;
+        border-radius: 50%;
+        border:  dashed 1px #00fbc3;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -165px;
+        margin-left: -165px;
+        animation: dashedni 8s infinite linear;
+    }
+    .s3dashed div:nth-of-type(3){
+        width:380px;
+        height: 380px;
+        border-radius: 50%;
+        border:  dashed 1px #00fbc3;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -190px;
+        margin-left: -190px;
+        animation: dashedshun 8s infinite linear;
+    }
+    .s3dashed div:nth-of-type(4){
+        width:430px;
+        height: 430px;
+        border-radius: 50%;
+        border:  dashed 1px #00fbc3;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -215px;
+        margin-left: -215px;
+        animation: dashedni 8s infinite linear;
+    }
+    @-webkit-keyframes dashedshun {
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+    }
+    @-webkit-keyframes dashedni {
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(-360deg);
+        }
+    }
+
+}
+@media screen and (max-width: 375px) {
+    .s3dashed{
+        position: absolute;
+        top: 27%;
+        left: 12%;
+
+    }
+    .s3dashed div:nth-of-type(1){
+        width:280px;
+        height: 280px;
+        border-radius: 50%;
+        border:  dashed 1px #00fbc3;
+        animation: dashedshun 8s infinite linear;
+    }
+    .s3dashed div:nth-of-type(2){
+        width:320px;
+        height: 320px;
+        border-radius: 50%;
+        border:  dashed 1px #00fbc3;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -160px;
+        margin-left: -160px;
+        animation: dashedni 8s infinite linear;
+    }
+    .s3dashed div:nth-of-type(3){
+        width:360px;
+        height: 360px;
+        border-radius: 50%;
+        border:  dashed 1px #00fbc3;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -180px;
+        margin-left: -180px;
+        animation: dashedshun 8s infinite linear;
+    }
+    .s3dashed div:nth-of-type(4){
+        width:400px;
+        height: 400px;
+        border-radius: 50%;
+        border:  dashed 1px #00fbc3;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -200px;
+        margin-left: -200px;
+        animation: dashedni 8s infinite linear;
+    }
+}
+@media screen and (max-width: 320px) {
+    .s3dashed{
+        text-align: center;
+        color: #0bffba;
+        position: absolute;
+        top: 30%;
+        left: 18%;
+
+    }
+    .s3dashed div:nth-of-type(1){
+        width:200px;
+        height: 200px;
+        border-radius: 50%;
+        border:  dashed 1px #00fbc3;
+        animation: dashedshun 8s infinite linear;
+    }
+    .s3dashed div:nth-of-type(2){
+        width:230px;
+        height: 230px;
+        border-radius: 50%;
+        border:  dashed 1px #00fbc3;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -115px;
+        margin-left: -115px;
+        animation: dashedni 8s infinite linear;
+    }
+    .s3dashed div:nth-of-type(3){
+        width:260px;
+        height: 260px;
+        border-radius: 50%;
+        border:  dashed 1px #00fbc3;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -130px;
+        margin-left: -130px;
+        animation: dashedshun 8s infinite linear;
+    }
+    .s3dashed div:nth-of-type(4){
+        width:290px;
+        height: 290px;
+        border-radius: 50%;
+        border:  dashed 1px #00fbc3;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -145px;
+        margin-left: -145px;
+        animation: dashedni 8s infinite linear;
+    }
+    .s3font{
+        width:80px;
+        height: 100px;
+        color: #26faae;
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        margin-left: -40px;
+        margin-top: -65px;
+    }
+    .s3font div:nth-of-type(1) span:nth-of-type(1){
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        background: url("../img/s3.png");
+        background-size: cover;
+        left: -90%;
+        top: -50%;
+        line-height: 60px;
+    }
+    .s3font div:nth-of-type(1) span:nth-of-type(2){
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        background: url("../img/s3.png");
+        background-size: cover;
+        left: 106%;
+        top: -50%;
+        line-height: 60px;
+    }
+    .s3font div:nth-of-type(2) span:nth-of-type(1) {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        background: url(../img/s3.png);
+        background-size: cover;
+        left: -138%;
+        top: 35%;
+        line-height: 60px;
+    }
+    .s3font div:nth-of-type(2) span:nth-of-type(2) {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        background: url(../img/s3.png);
+        background-size: cover;
+        left: 157%;
+        top: 35%;
+        line-height: 60px;
+    }
+    .s3font div:nth-of-type(3) span:nth-of-type(1) {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        background: url(../img/s3.png);
+        background-size: cover;
+        left: -90%;
+        top: 146%;
+        line-height: 60px;
+    }
+    .s3font div:nth-of-type(3) span:nth-of-type(2) {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        background: url(../img/s3.png);
+        background-size: cover;
+        left: 107%;
+        top: 147%;
+        line-height: 60px;
+    }
+    .s3font div:nth-of-type(4) span {
+        position: absolute;
+        width: 134px;
+        height: 134px;
+        background: url(../img/s3bg.png);
+        background-size: cover;
+        left: -38%;
+        top: 9%;
+        line-height:134px;
+    }
+
+    .s3 .s3text{
+        color:#26faae;
+        font-size:13px;
+        text-align: left;
+        position: absolute;
+        top: 80%;
+        left: 15%;
+        width: 80%;
+        border-left:2px solid #26faae;
+        line-height: 20px;
+        padding-left: 10px;
+    }
+
+}
+
