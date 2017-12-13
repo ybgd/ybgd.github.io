@@ -41,11 +41,39 @@ body {
     margin-left: -13.5px;
     transform: rotateZ(-90deg);
 }
+/*音乐按钮*/
+#mp3btn {
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    z-index: 100;
+    width: 30px;
+    height: 30px;
+    background: rgba(0, 0, 0, 0.54);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    border: 3px solid rgba(76, 76, 76, 0.62);
+    transform: rotateZ(0deg);
+    animation: mp3btnkey 2.3s linear infinite;
+}
 
+@keyframes mp3btnkey {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+#mp3btn img {
+    width: 10px;
+}
 
 /* .s1*/
 
-.s1,.s2{
+.s1,.s2,.s3,.s4,.s5,.s6,.s7{
     background: url("../img/bj.png");
     height: 100%;
 }
@@ -79,6 +107,9 @@ body {
     right: 50px;
     bottom: 210px;
     animation-iteration-count: infinite;
+}
+.swing{
+    transform-origin: center;
 }
 .s1 .header img:nth-of-type(5){
     left: 50%;
@@ -141,7 +172,7 @@ body {
 }
 
 /*s2页面*/
-.s2 {
+.s2{
     color:#0dd0b4;
 }
 .s2 h2{
@@ -151,7 +182,7 @@ body {
     background: url(../img/14.png);
     background-size: cover;
     left: 7%;
-    top: 9%;
+    top: 49%;
 }
 .s2 h2::before, .s2 h2::after {
     content: "";
@@ -164,15 +195,9 @@ body {
     background: url(../img/13.png);
     background-size: cover;
     right: 7%;
-    top: 9%;
+    top: 49%;
 }
-.s2 h2::before, .s2 h2::after {
-    content: "";
-    width: 83px;
-    height: 20px;
-    display: inline-block;
-    position: absolute;
-}
+
 .s2 small{
     display: block;
     font-size: 15px;
@@ -213,4 +238,38 @@ body {
     border-radius: 20px;
     font-weight: bold;
     text-align: center;
+}
+
+
+/*s3页面*/
+.s3{
+    color:#0dd0b4;
+}
+.s3 h2{
+    padding-top: 50px;
+}
+.s3 small{
+    display: block;
+    font-size: 15px;
+    padding-top:5px;
+    padding-bottom:10px;
+}
+.s3 h2::before, .s3 h2::after {
+    content: "";
+    width: 83px;
+    height: 20px;
+    display: inline-block;
+    position: absolute;
+}
+.s3 h2::after {
+    background: url(../img/13.png);
+    background-size: cover;
+    right: 7%;
+    top: 9%;
+}
+.s3 h2::before {
+    background: url(../img/14.png);
+    background-size: cover;
+    left: 7%;
+    top: 9%;
 }
