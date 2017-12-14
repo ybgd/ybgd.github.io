@@ -182,7 +182,7 @@ body {
     position: absolute;
     left:0;
 }
-//
+
 .s1 .footer img:nth-of-type(1) {
     left: 0;
     animation: footerimg1 1.5s alternate infinite;
@@ -256,14 +256,14 @@ body {
     margin: auto;
     text-align: left;
     padding: 5%;
-    font-size: 15px;}
+    font-size: 16px;}
 
 .s2 .text p{
     margin-bottom:8px;
 }
 .s2 span {
     position: absolute;
-    bottom: -66px;
+    bottom: -83px;
     left: 50%;
     width: 120px;
     height: 30px;
@@ -279,13 +279,14 @@ body {
     font-weight: bold;
     text-align: center;
 }
-//
+
 .s2 .footer img{
     height:70px;
     position: absolute;
     left:0;
-    top:596px;
+    bottom: 0;
 }
+/*波浪*/
 .s2 .footer img:nth-of-type(1) {
     left: 0;
     animation: footerimg1 1.5s alternate infinite;
@@ -704,5 +705,200 @@ body {
         padding-left: 10px;
     }
 
+}
+
+/*波浪*/
+.s3 .footer img{
+    position: absolute;
+    bottom: 0;
+    height:70px;
+}
+.s3 .footer img:nth-of-type(1) {
+    left: 0;
+    animation: footerimg1 1.5s alternate infinite;
+}
+.s3 .footer img:nth-of-type(2) {
+    left: 0;
+    animation: footerimg2 1.5s alternate infinite;
+}
+@keyframes footerimg1{
+    0%{
+        left:120px;
+    }
+    100%{
+        left:0px;
+    }
+}
+@keyframes footerimg2{
+    0%{
+        left:-90px;
+    }
+
+    100%{
+        left:0px;
+    }
+}
+
+/*s4*/
+.s4{
+    color:#0dd0b4;
+}
+.s4 h2{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.s4 h2::before {
+    background: url(../img/14.png);
+    background-size: cover;
+    left: 7%;
+    top: 8%;
+}
+.s4 h2::before, .s4 h2::after {
+    content: "";
+    width: 83px;
+    height: 20px;
+    display: inline-block;
+    position: absolute;
+}
+.s4 h2::after {
+    background: url(../img/13.png);
+    background-size: cover;
+    right: 7%;
+    top: 8%;
+}
+
+.s4 small{
+    display: block;
+    font-size: 15px;
+    padding-top:5px;
+    padding-bottom:10px;
+}
+.s4 .main{
+    height: 55%;
+    background-size: 100% 100%;
+    width: 80%;
+    margin: 0 auto;
+    background-image: url(../img/s4bg.png);
+}
+.s4 .main .s4ma img{
+    width:8%;
+}
+.s4 .main .s4ma p {
+     text-align: center;
+     padding-top: 10px;
+ }
+.s4 .main .s4mb p{
+    text-align: left;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+.s4 .main .s4mb .mb{
+    width:22px;
+}
+.s4 .main .s4mb .mbb{
+    width:171px;
+}
+.s4 .main .s4mb .mbbb{
+    width:60px;
+}
+
+.s4 .main .s4mc p{
+    text-align: left;
+    margin-left: 30px;
+}
+.s4 .main .s4mc .mc{
+    width:22px;
+}
+.s4 .main .s4mc .mcc{
+    width:126px;
+}
+.s4 .main .s4mc .mccc{
+    width:50px;
+}
+
+
+.s4 .main .s4md p{
+    text-align: left;
+    margin-left: 30px;
+}
+.s4 .main .s4md .md{
+    width:22px;
+}
+.s4 .main .s4md .mdd{
+    width:100px;
+}
+.s4 .main .s4md .mddd{
+    width:50px;
+}
+.s4 .main .pp{
+    font-size: 16px;
+    padding:15px;
+}
+
+/*波浪*/
+.s4 .footer img{
+    position: absolute;
+    bottom: 0;
+    height:70px;
+}
+.s4 .footer img:nth-of-type(1) {
+    left: 0;
+    animation: footerimg1 1.5s alternate infinite;
+}
+.s4 .footer img:nth-of-type(2) {
+    left: 0;
+    animation: footerimg2 1.5s alternate infinite;
+}
+@keyframes footerimg1{
+    0%{
+        left:120px;
+    }
+    100%{
+        left:0px;
+    }
+}
+@keyframes footerimg2{
+    0%{
+        left:-90px;
+    }
+
+    100%{
+        left:0px;
+    }
+}
+
+/*s5*/
+.s5{
+    color:#0dd0b4;
+}
+.s5 h2{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.s5 h2::before {
+    background: url(../img/14.png);
+    background-size: cover;
+    left: 7%;
+    top: 9%;
+}
+.s5 h2::before, .s5 h2::after {
+    content: "";
+    width: 83px;
+    height: 20px;
+    display: inline-block;
+    position: absolute;
+}
+.s5 h2::after {
+    background: url(../img/13.png);
+    background-size: cover;
+    right: 7%;
+    top: 9%;
+}
+
+.s5 small{
+    display: block;
+    font-size: 15px;
+    padding-top:5px;
+    padding-bottom:10px;
 }
 
