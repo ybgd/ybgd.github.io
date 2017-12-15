@@ -1,1 +1,0 @@
-document.querySelector("#add").innerHTML="这是一段文字"
