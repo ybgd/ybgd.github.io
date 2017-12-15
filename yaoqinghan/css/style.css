@@ -1,0 +1,163 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html, body {
+    position: relative;
+    height: 100%;
+}
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color:#000;
+    margin: 0;
+    padding: 0;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+
+}
+
+
+/*向下翻页的按钮*/
+.swiper-button-next {
+    position: absolute;
+    top: auto;
+    bottom: 5%;
+    left: 50%;
+    right: auto;
+    margin-left: -13.5px;
+    transform: rotateZ(-90deg);
+    width: 17px;
+    height: 34px;
+    background-size: 17px 34px;
+    animation: footbutton 2s infinite;
+}
+@keyframes footbutton{
+    0%{
+        botton:2%;
+        opacity:1;
+    }
+    100%{
+        botton:6%;
+        opacity:0;
+    }
+}
+
+
+/*s1页面*/
+.s1,.s2,.s3,.s4,.s5{
+    background-image: url("../img/yaoqinghanbj.jpg");
+    width:100%;
+    height: 100%;
+}
+
+.s1{
+    width: 100%;
+}
+.s1 img:nth-of-type(1){
+    width: 30%;
+    position: absolute;
+    top: 65px;
+    left: 166px;
+ }
+.s1 .header img:nth-of-type(2){
+    width: 30%;
+    position: absolute;
+    top: 209px;
+    left: 110px;
+}
+.s1 .header img:nth-of-type(3){
+    width: 30%;
+    position: absolute;
+    top: 354px;
+    left: 188px;
+}
+.s1 .header img:nth-of-type(4){
+    width: 5%;
+    position: absolute;
+    top: 210px;
+    left: 265px;
+}
+.s1 .header p{
+    color: #ffffff;
+    font-size:18px;
+}
+.s1 .header p:nth-last-of-type(1){
+    position: absolute;
+    bottom:51px;
+    left:145px;
+}
+.s1 .header p:nth-last-of-type(2){
+    position: absolute;
+    bottom:80px;
+    left:112px;
+}
+
+.s2 .container{
+    padding:50px;
+    color: #fff;
+}
+.s2 .container h2{
+    padding-bottom: 20px;
+}
+
+
+
+
+/*s3页面*/
+.s3 .main h2{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    color: #fff;
+}
+.s3 .main img{
+    width: 80%;
+}
+
+
+/*s4页面*/
+.s4 .main h2{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    color: #fff;
+}
+.s4 .main img{
+    width: 80%;
+}
+.s5 h2{
+    color:#fff;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.s5 .main {
+    width:80%;
+    margin: 0 auto;
+    background-size: 100% 100%;
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom:18px;
+}
+.s5 .main p input{
+    height: 40px;
+    width: 80%;
+    border:0.5px solid #400865;
+    padding-left: 10px;
+}
+.s5 .main  p button{
+    background: #7818b7;
+    border:0;
+    height: 40px;
+    width:80%;
+}
+
