@@ -53,6 +53,37 @@ body {
     }
 }
 
+/*音乐按钮*/
+#mp3btn {
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    z-index: 100;
+    width: 30px;
+    height: 30px;
+    background: rgba(0, 0, 0, 0.54);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    border: 3px solid rgba(76, 76, 76, 0.62);
+    transform: rotateZ(0deg);
+    animation: mp3btnkey 2.3s linear infinite;
+}
+
+@keyframes mp3btnkey {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+#mp3btn img {
+    width: 10px;
+}
+
+
 
 /*s1页面*/
 .s1,.s2,.s3,.s4,.s5{
